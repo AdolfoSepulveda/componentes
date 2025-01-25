@@ -14,7 +14,8 @@ export default defineConfig({
         main: './index.html',
         buttons: './buttons.html',
         tabs: './tabs.html',
-        inputs: './inputs.html'
+        inputs: './inputs.html',
+        script: './script.js'
       }
     }
   }
