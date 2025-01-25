@@ -6,8 +6,8 @@
     <title>Documentación de la Guía de Estilos</title>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styleguide.css">
-    <link href="node_modules/prismjs/themes/prism.css" rel="stylesheet" />
-    <script src="node_modules/prismjs/prism.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -25,12 +25,31 @@
                 <h1>Comenzar</h1>
                 
                 <div class="content-section">
+                    <h2>Requisitos Previos</h2>
+                    <p>Antes de comenzar, asegúrate de tener:</p>
+                    <ul>
+                        <li>Un editor de código</li>
+                        <li>Acceso a los archivos CSS del sistema de diseño</li>
+                        <li>Conocimientos básicos de HTML y CSS</li>
+                    </ul>
+
                     <h2>Instalación</h2>
-                    <p>Para usar los componentes de nuestra guía de estilos, necesitarás incluir los siguientes archivos en tu proyecto:</p>
+                    <p>Para usar los componentes de nuestra guía de estilos, sigue estos pasos:</p>
+
+                    <h3>1. Descarga los Archivos</h3>
+                    <p>Descarga los siguientes archivos CSS esenciales:</p>
+                    <ul>
+                        <li><code>styleguide.css</code> - Estilos principales de los componentes</li>
+                        <li><code>primitives.css</code> - Variables CSS y utilidades básicas</li>
+                    </ul>
+
+                    <h3>2. Incluye los Archivos en tu Proyecto</h3>
+                    <p>Agrega las siguientes líneas en el <code>&lt;head&gt;</code> de tu HTML:</p>
                     
                     <div class="code-snippet">
                         <pre><code class="language-html">&lt;!-- Add to your HTML head --&gt;
 &lt;link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet"&gt;
+&lt;link rel="stylesheet" href="primitives.css"&gt;
 &lt;link rel="stylesheet" href="styleguide.css"&gt;</code></pre>
                     </div>
 
@@ -39,22 +58,57 @@
 
                     <div class="code-snippet">
                         <pre><code class="language-plaintext">styleguide.css     # Main stylesheet with component styles
-primitives.css    # CSS variables and basic utilities</code></pre>
+primitives.css    # CSS variables and basic utilities
+  ├─ Colors      # Color variables and themes
+  ├─ Typography  # Font sizes, weights, and families
+  ├─ Spacing     # Margin and padding utilities
+  └─ Radius      # Border radius utilities</code></pre>
                     </div>
 
                     <h2>Uso Básico</h2>
-                    <p>Después de incluir los archivos requeridos, puedes comenzar a usar nuestros componentes. Visita las páginas específicas de los componentes para ejemplos detallados y guías de uso.</p>
+                    <p>Después de incluir los archivos requeridos, puedes comenzar a usar nuestros componentes. Aquí hay algunos ejemplos básicos:</p>
 
+                    <h3>Botones</h3>
                     <div class="code-snippet">
-                        <pre><code class="language-html">&lt;!-- Example of a primary button --&gt;
+                        <pre><code class="language-html">&lt;!-- Botón Primario --&gt;
 &lt;button class="btn btn-primary btn-medium"&gt;Primary Button&lt;/button&gt;
 
-&lt;!-- Example of tabs --&gt;
+&lt;!-- Botón Secundario --&gt;
+&lt;button class="btn btn-secondary btn-medium"&gt;Secondary Button&lt;/button&gt;
+
+&lt;!-- Botón de Peligro --&gt;
+&lt;button class="btn btn-danger btn-medium"&gt;Danger Button&lt;/button&gt;</code></pre>
+                    </div>
+
+                    <h3>Pestañas</h3>
+                    <div class="code-snippet">
+                        <pre><code class="language-html">&lt;!-- Ejemplo de Pestañas --&gt;
 &lt;div class="tabs"&gt;
     &lt;button class="tab-button active"&gt;Tab 1&lt;/button&gt;
     &lt;button class="tab-button"&gt;Tab 2&lt;/button&gt;
+    &lt;button class="tab-button"&gt;Tab 3&lt;/button&gt;
 &lt;/div&gt;</code></pre>
                     </div>
+
+                    <h3>Campos de Entrada</h3>
+                    <div class="code-snippet">
+                        <pre><code class="language-html">&lt;!-- Campo de Texto --&gt;
+&lt;input type="text" class="input input-medium" placeholder="Enter text"&gt;
+
+&lt;!-- Campo con Etiqueta --&gt;
+&lt;div class="input-group"&gt;
+    &lt;label class="input-label"&gt;Username&lt;/label&gt;
+    &lt;input type="text" class="input input-medium"&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+
+                    <h2>Documentación Detallada</h2>
+                    <p>Para obtener información más detallada sobre cada componente, visita las secciones específicas en el menú lateral:</p>
+                    <ul>
+                        <li><a href="buttons.html">Documentación de Botones</a></li>
+                        <li><a href="tabs.html">Documentación de Pestañas</a></li>
+                        <li><a href="inputs.html">Documentación de Campos de Entrada</a></li>
+                    </ul>
                 </div>
             </div>
         </main>

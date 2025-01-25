@@ -332,18 +332,45 @@ h2 {
 .code-snippet {
     margin-top: 1.5rem;
     position: relative;
-    background: none !important;
-    background-color: transparent !important;
+    background-color: var(--background-wrapper) !important;
     border-radius: var(--radius-md);
     border: 1px solid var(--border-def);
-    padding: 1rem;
+    padding: 1.5rem;
     font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .code-snippet pre {
-    margin: 0;
-    background: none !important;
-    background-color: transparent !important;
+    background-color: var(--colors-secondary-600);
+    color: var(--colors-primary-600);
+    padding: var(--spacing-12);
+    border-radius: var(--radius-sm);
+    margin: var(--spacing-12) 0;
+}
+
+.code-snippet code {
+    font-family: monospace;
+    color: var(--colores-verde-600);
+}
+
+.code-snippet .token.tag {
+    color: var(--colores-azul-600);
+}
+
+.code-snippet .token.attr-name {
+    color: var(--colores-naranjo-600);
+}
+
+.code-snippet .token.attr-value {
+    color: var(--colores-verde-600);
+}
+
+.code-snippet .token.string {
+    color: var(--colores-verde-600);
+}
+
+.code-snippet .token.punctuation {
+    color: var(--colors-secondary-600);
 }
 
 /* Prism.js syntax highlighting customization */
@@ -386,7 +413,12 @@ h2 {
 .code-snippet .token.atrule,
 .code-snippet .token.attr-value,
 .code-snippet .token.keyword {
-    color: var(--colores-morado-600);
+    color: var(--colors-info-600);
+}
+
+.code-snippet .token.regex,
+.code-snippet .token.important {
+    color: var(--colors-danger-600);
 }
 
 .code-snippet .token.function,
@@ -401,16 +433,20 @@ h2 {
 
 .copy-btn {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+    top: 0.75rem;
+    right: 0.75rem;
     padding: 0.5rem 1rem;
     background-color: var(--button-secondary);
     border: 1px solid var(--border-def);
     border-radius: var(--radius-md);
     color: var(--text-primary);
     cursor: pointer;
-    font-size: 0.875rem;
+    font-size: var(--typo-size-sm);
+    font-weight: var(--typo-weight-medium);
     transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .copy-btn:hover {
@@ -443,6 +479,8 @@ code {
     margin-bottom: 2rem;
     border-bottom: 1px solid var(--border-def);
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .tab-button {
