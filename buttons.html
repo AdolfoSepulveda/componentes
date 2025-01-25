@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Style Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleguide.css">
+    <link href="node_modules/prismjs/themes/prism.css" rel="stylesheet" />
+    <script src="node_modules/prismjs/prism.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <aside class="side-menu">
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Getting Started</a>
+                <a href="buttons.html" class="nav-item active">Buttons</a>
+                <a href="tabs.html" class="nav-item">Tabs</a>
+                <a href="inputs.html" class="nav-item">Inputs</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="container">
+                <h1>Button Style Guide</h1>
+                
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="primary">Primary</button>
+                    <button class="tab-button" data-tab="secondary">Secondary</button>
+                    <button class="tab-button" data-tab="text">Text</button>
+                    <button class="tab-button" data-tab="danger">Danger</button>
+                    <button class="tab-button" data-tab="excel">Excel</button>
+                </div>
+
+                <!-- Primary Buttons Section -->
+                <div class="tab-content active" id="primary">
+                    <div class="button-section">
+                        <h2>Primary Buttons</h2>
+                        <h3>Small</h3>
+                        <div class="button-group">
+                            <button class="btn btn-primary btn-small">Small</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-primary btn-small"&gt;Small&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <h3>Medium</h3>
+                        <div class="button-group">
+                            <button class="btn btn-primary btn-medium">Medium</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-primary btn-medium"&gt;Medium&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <h3>Large</h3>
+                        <div class="button-group">
+                            <button class="btn btn-primary btn-large">Large</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-primary btn-large"&gt;Large&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <h3>Disabled</h3>
+                        <div class="button-group">
+                            <button class="btn btn-primary btn-medium" disabled>Disabled</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-primary btn-medium" disabled&gt;Disabled&lt;/button&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Buttons Section -->
+                <div class="tab-content" id="secondary">
+                    <div class="button-section">
+                        <h2>Secondary Buttons</h2>
+                        <h3>Small</h3>
+                        <div class="button-group">
+                            <button class="btn btn-secondary btn-small">Small</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-secondary btn-small"&gt;Small&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <h3>Medium</h3>
+                        <div class="button-group">
+                            <button class="btn btn-secondary btn-medium">Medium</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-secondary btn-medium"&gt;Medium&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <h3>Large</h3>
+                        <div class="button-group">
+                            <button class="btn btn-secondary btn-large">Large</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-secondary btn-large"&gt;Large&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <h3>Disabled</h3>
+                        <div class="button-group">
+                            <button class="btn btn-secondary btn-medium" disabled>Disabled</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-secondary btn-medium" disabled&gt;Disabled&lt;/button&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Buttons Section -->
+                <div class="tab-content" id="text">
+                    <div class="button-section">
+                        <h2>Text Buttons</h2>
+                        <div class="button-group">
+                            <button class="btn btn-text">Text Button</button>
+                            <button class="btn btn-text" disabled>Disabled</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-text"&gt;Text Button&lt;/button&gt;
+&lt;button class="btn btn-text" disabled&gt;Disabled&lt;/button&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Danger Buttons Section -->
+                <div class="tab-content" id="danger">
+                    <div class="button-section">
+                        <h2>Danger Buttons</h2>
+                        <h3>Small</h3>
+                        <div class="button-group">
+                            <button class="btn btn-danger btn-small">Small</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-danger btn-small"&gt;Small&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <h3>Medium</h3>
+                        <div class="button-group">
+                            <button class="btn btn-danger btn-medium">Medium</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-danger btn-medium"&gt;Medium&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <h3>Large</h3>
+                        <div class="button-group">
+                            <button class="btn btn-danger btn-large">Large</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-danger btn-large"&gt;Large&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <h3>Disabled</h3>
+                        <div class="button-group">
+                            <button class="btn btn-danger btn-medium" disabled>Disabled</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-danger btn-medium" disabled&gt;Disabled&lt;/button&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Excel Buttons Section -->
+                <div class="tab-content" id="excel">
+                    <div class="button-section">
+                        <h2>Excel Buttons</h2>
+                        <h3>Small</h3>
+                        <div class="button-group">
+                            <button class="btn btn-excel btn-small">Small</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-excel btn-small"&gt;Small&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <h3>Medium</h3>
+                        <div class="button-group">
+                            <button class="btn btn-excel btn-medium">Medium</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-excel btn-medium"&gt;Medium&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <h3>Large</h3>
+                        <div class="button-group">
+                            <button class="btn btn-excel btn-large">Large</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-excel btn-large"&gt;Large&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <h3>Disabled</h3>
+                        <div class="button-group">
+                            <button class="btn btn-excel btn-medium" disabled>Disabled</button>
+                        </div>
+                        <div class="code-snippet">
+                            <pre><code class="language-html">&lt;button class="btn btn-excel btn-medium" disabled&gt;Disabled&lt;/button&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

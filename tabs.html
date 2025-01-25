@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Style Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleguide.css">
+    <link href="node_modules/prismjs/themes/prism.css" rel="stylesheet" />
+    <script src="node_modules/prismjs/prism.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <aside class="side-menu">
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Getting Started</a>
+                <a href="buttons.html" class="nav-item">Buttons</a>
+                <a href="tabs.html" class="nav-item active">Tabs</a>
+                <a href="inputs.html" class="nav-item">Inputs</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="container">
+                <div class="content-section">
+                    <h1>Tabs Style Guide</h1>
+                    
+                    <div class="button-example">
+                        <div class="button-group">
+                            <div class="tabs">
+                                <button class="tab-button active" data-tab="tab1">Tab 1</button>
+                                <button class="tab-button" data-tab="tab2">Tab 2</button>
+                                <button class="tab-button" data-tab="tab3">Tab 3</button>
+                            </div>
+                        </div>
+                        <div class="code-snippet">
+                            <button class="copy-btn">Copy</button>
+                            <pre><code class="language-html">&lt;div class="tabs"&gt;
+    &lt;button class="tab-button active" data-tab="tab1"&gt;Tab 1&lt;/button&gt;
+    &lt;button class="tab-button" data-tab="tab2"&gt;Tab 2&lt;/button&gt;
+    &lt;button class="tab-button" data-tab="tab3"&gt;Tab 3&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

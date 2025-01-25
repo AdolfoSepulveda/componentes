@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleguide.css">
+    <link href="node_modules/prismjs/themes/prism.css" rel="stylesheet" />
+    <script src="node_modules/prismjs/prism.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <aside class="side-menu">
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item active">Getting Started</a>
+                <a href="buttons.html" class="nav-item">Buttons</a>
+                <a href="tabs.html" class="nav-item">Tabs</a>
+                <a href="inputs.html" class="nav-item">Inputs</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="container">
+                <h1>Getting Started</h1>
+                
+                <div class="content-section">
+                    <h2>Installation</h2>
+                    <p>To use our style guide components, you'll need to include the following files in your project:</p>
+                    
+                    <div class="code-snippet">
+                        <pre><code class="language-html">&lt;!-- Add to your HTML head --&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet"&gt;
+&lt;link rel="stylesheet" href="styleguide.css"&gt;</code></pre>
+                    </div>
+
+                    <h2>CSS Files Structure</h2>
+                    <p>Our style system is organized into the following files:</p>
+
+                    <div class="code-snippet">
+                        <pre><code class="language-plaintext">styleguide.css     # Main stylesheet with component styles
+primitives.css    # CSS variables and basic utilities</code></pre>
+                    </div>
+
+                    <h2>Basic Usage</h2>
+                    <p>After including the required files, you can start using our components. Visit the specific component pages for detailed examples and usage guidelines.</p>
+
+                    <div class="code-snippet">
+                        <pre><code class="language-html">&lt;!-- Example of a primary button --&gt;
+&lt;button class="btn btn-primary btn-medium"&gt;Primary Button&lt;/button&gt;
+
+&lt;!-- Example of tabs --&gt;
+&lt;div class="tabs"&gt;
+    &lt;button class="tab-button active"&gt;Tab 1&lt;/button&gt;
+    &lt;button class="tab-button"&gt;Tab 2&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
