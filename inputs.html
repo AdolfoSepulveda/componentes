@@ -25,10 +25,103 @@
             <div class="container">
                 <div class="content-section">
                     <h1>Guía de Estilos de Entradas</h1>
-                    <div class="button-example">
-                        <div class="button-group">
-                            <!-- Input examples will be added here -->
+                    <h2>Código de Verificación</h2>
+                    <div class="input-example">
+                        <div class="verification-code">
+                            <input type="text" class="verification-input" maxlength="1">
+                            <input type="text" class="verification-input" maxlength="1">
+                            <input type="text" class="verification-input" maxlength="1">
+                            <input type="text" class="verification-input" maxlength="1">
                         </div>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-html">&lt;div class="verification-code"&gt;
+    &lt;input type="text" class="verification-input" maxlength="1"&gt;
+    &lt;input type="text" class="verification-input" maxlength="1"&gt;
+    &lt;input type="text" class="verification-input" maxlength="1"&gt;
+    &lt;input type="text" class="verification-input" maxlength="1"&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                    
+                    <h2>Campo de Texto</h2>
+                    <div class="input-example">
+                        <div class="input-group">
+                            <label class="input-label">Nombre</label>
+                            <input type="text" class="input input-medium" placeholder="Ingresa tu nombre">
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-html">&lt;div class="input-group"&gt;
+    &lt;label class="input-label"&gt;Nombre&lt;/label&gt;
+    &lt;input type="text" class="input input-medium" placeholder="Ingresa tu nombre"&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+
+                    <h2>Selector</h2>
+                    <div class="input-example">
+                        <div class="input-group">
+                            <label class="input-label">País</label>
+                            <select class="select select-medium">
+                                <option value="">Selecciona un país</option>
+                                <option value="es">España</option>
+                                <option value="mx">México</option>
+                                <option value="ar">Argentina</option>
+                                <option value="co">Colombia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-html">&lt;div class="input-group"&gt;
+    &lt;label class="input-label"&gt;País&lt;/label&gt;
+    &lt;select class="select select-medium"&gt;
+        &lt;option value=""&gt;Selecciona un país&lt;/option&gt;
+        &lt;option value="es"&gt;España&lt;/option&gt;
+        &lt;option value="mx"&gt;México&lt;/option&gt;
+        &lt;option value="ar"&gt;Argentina&lt;/option&gt;
+        &lt;option value="co"&gt;Colombia&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+
+                    <h2>Editor de Texto Enriquecido</h2>
+                    <div class="input-example">
+                        <div class="input-group">
+                            <label class="input-label">Descripción</label>
+                            <div class="rich-text-editor">
+                                <div class="editor-toolbar">
+                                    <button class="editor-button" data-format="bold"><strong>B</strong></button>
+                                    <button class="editor-button" data-format="italic"><em>I</em></button>
+                                    <button class="editor-button" data-format="list-ul">• List</button>
+                                    <button class="editor-button" data-format="list-ol">1. List</button>
+                                    <button class="editor-button" data-format="image">Image</button>
+                                </div>
+                                <div class="editor-content" contenteditable="true" placeholder="Escribe tu contenido aquí..."></div>
+                            </div>
+                        </div>
+                                <option value="" disabled selected>Selecciona un país</option>
+                                <option value="mx">México</option>
+                                <option value="es">España</option>
+                                <option value="ar">Argentina</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h2>Campo de Búsqueda</h2>
+                    <div class="input-example">
+                        <div class="input-group">
+                            <div class="search-input-wrapper">
+                                <input type="search" class="input input-medium search-input" placeholder="Buscar...">
+                                <span class="search-icon">🔍</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-html">&lt;div class="input-group"&gt;
+    &lt;div class="search-input-wrapper"&gt;
+        &lt;input type="search" class="input input-medium search-input" placeholder="Buscar..."&gt;
+        &lt;span class="search-icon"&gt;🔍&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                     </div>
                 </div>
             </div>
